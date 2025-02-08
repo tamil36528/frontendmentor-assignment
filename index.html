@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			Can you do?
+		</title>
+		<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7051/7051406.png">
+		<style>
+			h1 {
+				text-align: center;
+				font-size: 2rem;
+				margin: 2rem 0;
+			}
+
+			main {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 1rem;
+				padding: 1rem;
+			}
+
+			main>div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #f0f0f0;
+				border-radius: 0.5rem;
+				/* padding: 1rem; */
+				text-align: center;
+				text-decoration: none;
+				color: #333;
+				font-size: 1.5rem;
+				flex-direction: column;
+				transition: 0.24s;
+			}
+			main>div:before {
+				content: attr(data-difficulty);
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-color: #333;
+				color: #fff;
+				padding: .5rem;
+				border-radius: 0 0 0 0.5rem;
+			}
+			main>div:has(>a:hover) {
+				background-color: #e0e0e0;
+				scale: 1.05;
+				box-shadow: 0 0 .7rem #3e36ba;
+			}
+			main>div>a{
+				color: #000;
+				text-decoration: none;
+			}
+			main>div>a>p {
+				margin: 1rem 0;
+			}
+			main>div>a:nth-child(2){
+				background-color: #d9efef;
+				width: 100%;
+				border-radius: inherit;
+			}
+			body{
+				min-height: 100dvh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin: unset;
+			}
+			footer{
+				display:grid;
+				grid-template-columns: 1fr auto auto;
+				background-color: #f0f0f0;
+				align-items: baseline;
+				padding: 1rem .5rem;
+			}
+			footer > a:first-child{
+				text-align: center;
+			}
+			footer > p{
+				margin: auto;
+			}
+			footer > a > img {
+				border-radius: 50%;
+				width: 2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>
+			Frontend Mentor Challenge
+		</h1>
+		<main>
+			
+				<div data-difficulty="2">
+					<a href="mortgage-repayment-calculator-main">
+						<p>
+							k.sudharsan
+						</p>
+						<p>(727624bea301)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/mortgage-repayment-calculator-Galx1LXK73">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="huddle-landing-page-with-curved-sections-master">
+						<p>
+							mowsikan.h
+						</p>
+						<p>(727623bea030)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="sunnyside-agency-landing-page-main">
+						<p>
+							dhina.k
+						</p>
+						<p>(727623bea040)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/agency-landing-page-7yVs3B6ef">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="newsletter-sign-up-with-success-message-main">
+						<p>
+							ragul dp
+						</p>
+						<p>(727623bea055)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="four-card-feature-section-master">
+						<p>
+							Hariprasath V
+						</p>
+						<p>(727623BEA036)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/four-card-feature-section-weK1eFYK">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="social-proof-section-master">
+						<p>
+							Mohamed Irshadh B
+						</p>
+						<p>(727623BEA033)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/social-proof-section-6e0qTv_bA">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="order-summary-component-main">
+						<p>
+							Sabareesh S
+						</p>
+						<p>(727623BEA054)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/order-summary-component-QlPmajDUj">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="nft-preview-card-component-main">
+						<p>
+							pradeesh .B
+						</p>
+						<p>(727623bec073)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/nft-preview-card-component-SbdUL_w0U">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="recipe-page-main">
+						<p>
+							Nikhil .V
+						</p>
+						<p>(727623BEC105)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/recipe-page-KiTsR8QQKm">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="contact-form-main">
+						<p>
+							vidhyasagar.b
+						</p>
+						<p>(727623bec090)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/contact-form--G-hYlqKJj">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="results-summary-component-main">
+						<p>
+							rithish kumar.m
+						</p>
+						<p>(727623bec118)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/results-summary-component-CE_K6s0maV">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="notifications-page-main">
+						<p>
+							sangeethrajan.s
+						</p>
+						<p>(727623bec060)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/notifications-page-DqK5QAmKbC">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="article-preview-component-master">
+						<p>
+							sarankaligesh.r.n
+						</p>
+						<p>(727623bec128)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/article-preview-component-dYBN_pYFT">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="fylo-dark-theme-landing-page-master">
+						<p>
+							Gajendran.S
+						</p>
+						<p>(727624bec308)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="intro-section-with-dropdown-navigation-main">
+						<p>
+							Tamilazghan.R
+						</p>
+						<p>(727624bec304)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/intro-section-with-dropdown-navigation-ryaPetHE5">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="coding-bootcamp-testimonials-slider-master">
+						<p>
+							Elango.A
+						</p>
+						<p>(727623BEC080)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="time-tracking-dashboard-main">
+						<p>
+							Ilayabharathi S
+						</p>
+						<p>(727623BEC050)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/time-tracking-dashboard-UIQ7167Jw">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="ping-coming-soon-page-master">
+						<p>
+							Nithyashri KG 
+						</p>
+						<p>(727623BEC093)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="3-column-preview-card-component-main">
+						<p>
+							Harini NM
+						</p>
+						<p>(727623BEC115)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/3column-preview-card-component-pH92eAR2-">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="interactive-card-details-form-main">
+						<p>
+							Gayathri M K
+						</p>
+						<p>(727623BEC010)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/interactive-card-details-form-XpS8cKZDWw">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="advice-generator-app-main">
+						<p>
+							Pradusha S
+						</p>
+						<p>(727623BEC040)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/advice-generator-app-QdUG-13db">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="social-media-dashboard-with-theme-switcher-master">
+						<p>
+							Mehavarshini M
+						</p>
+						<p>(727623BEC098)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="single-price-grid-component-master">
+						<p>
+							Hamshika A
+						</p>
+						<p>(727623BEC020)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="expenses-chart-component-main">
+						<p>
+							Aswin S
+						</p>
+						<p>(727623BEC009)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/expenses-chart-component-e7yJBUdjwt">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="pricing-component-with-toggle-master">
+						<p>
+							Sivamurugan A R
+						</p>
+						<p>(727623BEC121)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/pricing-component-with-toggle-8vPwRMIC">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="profile-card-component-main">
+						<p>
+							Padma Priya N
+						</p>
+						<p>(727623BEC051)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/profile-card-component-cfArpWshJ">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="faq-accordion-main">
+						<p>
+							Roshani A R
+						</p>
+						<p>(727623BEC083)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/faq-accordion-wyfFdeBwBz">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="social-links-profile-main">
+						<p>
+							Sarjana J
+						</p>
+						<p>(727623BEC019)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/social-links-profile-UG32l9m6dQ">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="fylo-landing-page-with-two-column-layout-master">
+						<p>
+							Ranjani S
+						</p>
+						<p>(727623BEC039)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="intro-component-with-signup-form-master">
+						<p>
+							Ashika Parveen
+						</p>
+						<p>(727623BEC063)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="conference-ticket-generator-main">
+						<p>
+							Rithika S
+						</p>
+						<p>(727623BEC125)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/conference-ticket-generator-oq5gFIU12w">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="insure-landing-page-master">
+						<p>
+							Nandhini M
+						</p>
+						<p>(727623BEC030)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/insure-landing-page-uTU68JV8">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="crowdfunding-product-page-main">
+						<p>
+							Dharani U
+						</p>
+						<p>(727623BEC070)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/crowdfunding-product-page-7uvcZe7ZR">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="blog-preview-card-main">
+						<p>
+							Sneka Venkateswari M
+						</p>
+						<p>(727623BEC108)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/blog-preview-card-ckPaj01IcS">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="blogr-landing-page-main">
+						<p>
+							Kanishka S
+						</p>
+						<p>(727624BEC302)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/blogr-landing-page-EX2RLAApP">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="stats-preview-card-component-main">
+						<p>
+							M Kunkuma dheeksha
+						</p>
+						<p>(727623BEA048)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/stats-preview-card-component-8JqbgoU62">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="project-tracking-intro-component-master">
+						<p>
+							Yazhini S
+						</p>
+						<p>(727623BEA014)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/project-tracking-intro-component-5d289097500fcb331a67d80e">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="tip-calculator-app-main">
+						<p>
+							Chennammal S
+						</p>
+						<p>(727623BEA011)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/tip-calculator-app-ugJNGbJUX">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="product-preview-card-component-main">
+						<p>
+							Pavithra S
+						</p>
+						<p>(727623BEA020)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/product-preview-card-component-GO7UmttRfa">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="testimonials-grid-section-main">
+						<p>
+							Dharani Sri S
+						</p>
+						<p>(727623BEA009)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/testimonials-grid-section-Nnw6J7Un7">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="huddle-landing-page-with-alternating-feature-blocks-master">
+						<p>
+							Jeevala harini
+						</p>
+						<p>(727623BEA022)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="clipboard-landing-page-master">
+						<p>
+							Mohamed Haneef
+						</p>
+						<p>(727623BEC129)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9">More info</a>
+					</div>
+			
+				<div data-difficulty="1">
+					<a href="base-apparel-coming-soon-master">
+						<p>
+							Logeshwran M
+						</p>
+						<p>(727623BEC029)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="news-homepage-main">
+						<p>
+							Dharshan 
+						</p>
+						<p>(727623BEC111)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/news-homepage-H6SWTa1MFl">More info</a>
+					</div>
+			
+				<div data-difficulty="2">
+					<a href="age-calculator-app-main">
+						<p>
+							S. YOGESHWARAN
+						</p>
+						<p>(727623BEA044)</p>
+					</a>
+					<a href="https://frontendmentor.io//challenges/age-calculator-app-dF9DFFpj-Q">More info</a>
+					</div>
+			
+		</main>
+		<footer>
+			<a href="https://www.frontendmentor.io">frontendmentor.io</a>
+			<a href="https://github.com/arunachaleshwaran">
+				<img src="https://avatars.githubusercontent.com/u/40736690?s=48&v=4" alt="GitHub Icon">
+			</a>
+			<p>/arunachaleshwaran</p>
+		</footer>
+		</body>
+	</body>
+
+</html>
